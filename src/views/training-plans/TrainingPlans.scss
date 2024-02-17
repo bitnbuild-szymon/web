@@ -1,0 +1,41 @@
+.training-plans
+{
+    .container
+    {
+        position: absolute;
+        top: 0;
+        width: calc(100% - 350px);
+        height: fit-content;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin: 25px;
+        
+    }
+
+    .create-training-plan-view
+    {
+        position: absolute;
+        top: 0;
+        width: calc(100% - 350px);
+        height: fit-content;
+        right: 0;
+        display: flex;
+        justify-content: center;
+
+        
+        h1
+        {
+            position: relative;
+            margin: 0;
+            top: 50px;
+            color: black;
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+    }
+}

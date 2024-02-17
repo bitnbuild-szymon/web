@@ -1,22 +1,16 @@
 import './SignIn.scss';
-import { Link } from 'react-router-dom';
+import { Link, Navigate} from 'react-router-dom';
 import { useState } from 'react';
-import { signInWithEmail } from '../../../lib/firebase/module.ts';
+import { useAuth } from '../../../contexts/AuthContext';
 
-const handleSignIn = async (email, password) => {
-    console.log(email, password);
-    await signInWithEmail(email, password)
-    .then((userCredentials) => {
-        console.log(userCredentials);
-    }).catch((err) => {
-        console.error(err);
-    })
-}
 
 const SignIn = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    
+    const {user, signIn} = useAuth();
+
+    if(user) return (<Navigate to="/" />);
+
     return (
         <div className="sign-in">
             <form action="" autoComplete="off" spellCheck="false">
@@ -30,7 +24,7 @@ const SignIn = () => {
                     <span>password</span>
                     <input type="password" onChange={(e) => setPassword(e.target.value)} id="password"/>
                 </label>
-                <button type="submit" onClick={(e) => {e.preventDefault();handleSignIn(email, password);}} className="sign-in-button">sign in</button>
+                <button type="submit" onClick={(e) => {e.preventDefault();signIn(email, password);}} className="sign-in-button">sign in</button>
                 <span>Don't have account yet? <Link to="/auth/sign-up">sign up</Link></span>
             </form>
         </div>

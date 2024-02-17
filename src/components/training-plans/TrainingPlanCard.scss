@@ -1,0 +1,48 @@
+.training-plan-card
+{
+    position: relative;
+    width: 350px;
+    height: 125px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    cursor: pointer;
+    user-select: none;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s;
+
+    &:hover 
+    {
+        border: 1px solid #1780EA90;
+        color: #1780EA90;
+    }
+
+    .exercises-count
+    {
+        position: absolute;
+        font-family: "Montserrat";
+        font-size: 60px;
+        font-weight: 500;
+        margin-left: 25px;
+    }
+
+    .title 
+    {
+        position: absolute;
+        font-size: 20px;
+        font-weight: 600;
+        top: 20px;
+        left: 20px;
+    }
+
+    .created-at
+    {
+        position: absolute;
+        font-size: 16px;
+        font-weight: 500;
+        bottom: 20px;
+        right: 20px;
+    }
+}

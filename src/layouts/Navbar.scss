@@ -8,8 +8,9 @@ nav
     display: flex;
     justify-content: center;
     background-color: white;
-    border-radius: 0 25px 0 25px;
-    box-shadow: 0 0 25px #00000008;
+    // border-radius: 0 25px 0 25px;
+    // box-shadow: 0 0 25px #00000008;
+    border-right: 2px solid var(--theme-color-3);
     z-index: 5;
 
     .side-buttons
@@ -17,26 +18,27 @@ nav
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         top: 100px;
-        width: calc(100% - 100px);
-        right: 0;
+        width: 100%;
+        align-items: center;
+        
 
         #current
         {
-            font-weight: 600;
             color: var(--theme-color-1);
+            background-color: #1780EA25;
         }
 
     }
 
-    .sign-in-button
+    .bottom-button
     {
         position: absolute;
-        bottom: 30px;
+        bottom: 0px;
         display: flex;
-        width: calc(100% - 125px);
-        height: 50px;
+        width: 100%;
+        height: 75px;
         justify-content: center;
         align-items: center;
         color: black;
@@ -46,6 +48,11 @@ nav
         letter-spacing: .5px;
         text-transform: capitalize;
         transition: color .3s;
+        text-decoration: underline;
+        border: none;
+        border-top: 2px solid var(--theme-color-3);
+        background-color: transparent;
+        cursor: pointer;
         
 
         &:hover

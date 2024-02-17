@@ -4,22 +4,25 @@
     -webkit-user-drag: none;
 
     position: relative;
-            width: 100%;
-            height: fit-content;
-            font-size: 20px;
-            display: flex;
-            display: row;
-            gap: 25px;
-            align-items: center;
-            font-family: 'Montserrat';
-            text-decoration: none;
-            color: var(--theme-color-2);
-            font-weight: 400;
-            text-transform: capitalize;
+    width: calc(100% - 80px);
+    height: fit-content;
+    font-size: 20px;
+    display: flex;
+    display: row;
+    gap: 25px;
+    align-items: center;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: var(--theme-color-2);
+    font-weight: 400;
+    text-transform: capitalize;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 10px;
 
-            svg
-            {
-                font-size: 30px;
-                left: 0;
-            }
+    svg
+    {
+        font-size: 30px;
+        left: 0;
+    }
 }
