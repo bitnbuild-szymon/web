@@ -1,0 +1,25 @@
+.navigation-button
+{
+    user-select: none;
+    -webkit-user-drag: none;
+
+    position: relative;
+            width: 100%;
+            height: fit-content;
+            font-size: 20px;
+            display: flex;
+            display: row;
+            gap: 25px;
+            align-items: center;
+            font-family: 'Montserrat';
+            text-decoration: none;
+            color: var(--theme-color-2);
+            font-weight: 400;
+            text-transform: capitalize;
+
+            svg
+            {
+                font-size: 30px;
+                left: 0;
+            }
+}

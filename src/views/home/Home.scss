@@ -1,0 +1,23 @@
+.home
+{
+    display: flex;
+    justify-content: center;
+
+    .posts-container
+    {
+        position: relative;
+        width: 600px;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .profile-info
+    {
+        position: absolute;
+        left: calc(50% + 350px);
+        margin-top: 50px;
+        width: 350px;
+        height: 500px;
+    }
+    
+}
