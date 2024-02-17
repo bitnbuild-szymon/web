@@ -10,7 +10,7 @@
     cursor: pointer;
     user-select: none;
     color: black;
-    border: 1px solid black;
+    border: 1px solid var(--theme-color-3);
     transition: 0.3s;
 
     &:hover 

@@ -41,14 +41,14 @@ nav
         height: 75px;
         justify-content: center;
         align-items: center;
-        color: black;
+        color: var(--theme-color-2);
         font-family: 'Montserrat';
         font-weight: 500;
         font-size: 20px;
         letter-spacing: .5px;
         text-transform: capitalize;
         transition: color .3s;
-        text-decoration: underline;
+        text-decoration: none;
         border: none;
         border-top: 2px solid var(--theme-color-3);
         background-color: transparent;
