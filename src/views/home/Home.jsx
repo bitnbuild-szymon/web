@@ -8,8 +8,14 @@ const Home = () => {
             <div className="posts-container">
 
             </div>
-            <div className="profile-info">
-                
+            <div className="side-container">
+                <div className="my-profile section">
+                    <img className="profile-image" src="/assets/images/user.png"/>
+                    <span className="username">Locz3k</span>
+                </div>
+                <div className="friends section">
+
+                </div>
             </div>
         </div>
     )

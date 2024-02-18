@@ -1,0 +1,36 @@
+.training-plan-button
+{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    min-height: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--theme-color-3);
+    background-color: white;
+    font-family: "Montserrat";
+    font-size: 18px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+    top: 10px;
+    text-decoration: none;
+    color: black;
+
+    svg 
+    {
+        font-size: 25px;
+        color: var(--theme-color-1);
+    }
+
+    &:hover
+    {
+        color: var(--theme-color-1);
+        border-color: var(--theme-color-1);
+    }
+
+}

@@ -1,31 +1,27 @@
-import TrainingPlanCard from '../../components/training-plans/TrainingPlanCard';
+import { TfiAgenda } from "react-icons/tfi";
+import { CreateTrainingPlanButton, ViewTrainingPlanButton } from '../../components/training-plans/TrainingPlanButtons';
 import Navbar from '../../layouts/Navbar';
-import CreateTrainingPlanButton from '../../components/training-plans/CreateTrainingPlanButton';
 import './TrainingPlans.scss';
 import { useState } from 'react';
 
 const Exercises = () => {
-    const test = [];
-
-    for(let i = 0; i < 10; i++) {
-        test.push(<TrainingPlanCard key={i}></TrainingPlanCard>);
-    } 
-
     const [showCreateTrainingPlanView, setShowCreateTrainingPlanView] = useState(false);
     
     return (
         <div className="training-plans">
             <Navbar />
-            {(showCreateTrainingPlanView ? (
-                <div className="create-training-plan-view">
-                    <h1>Create training plan</h1>
+            <div className="container">
+                <div className="my-training-plans section">
+                    <h1>my training plans</h1>
+                    <div className="my-training-plans-list">
+                        <CreateTrainingPlanButton text="new training plan" icon={<TfiAgenda />} />
+                        <ViewTrainingPlanButton text="test" icon={<TfiAgenda/>} />
+                    </div>
                 </div>
-            ) : (
-                <div className="container">
-                    {test}
-                    <CreateTrainingPlanButton onClick={() => {setShowCreateTrainingPlanView(true)}}/>
+                <div className="training-plan-preview section">
+                    
                 </div>
-            ))}
+            </div>
         </div>
     )
 }

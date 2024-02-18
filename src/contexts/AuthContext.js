@@ -1,6 +1,6 @@
 import { useContext, createContext, useState } from "react";
-import { signInWithEmail } from "../lib/firebase/module.js";
-
+import { signInWithEmail, signUpWithEmail } from "bitnbuild-back";
+import { Navigate } from "react-router-dom";
 const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
@@ -8,12 +8,14 @@ const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
     // Handle sign in
-    const signIn = (email, password) => {
-        console.log(email, password);
-        signInWithEmail(email, password)
-        .then(userCredentials => {
-            setUser(userCredentials.user);
-        }).catch(err => {console.error(err)});
+    const signIn = async (email, password) => {
+        try {
+            const res = await signInWithEmail(email, password);
+            setUser(res.userProfile);
+            return (<Navigate to="/" />);
+        } catch (error) {
+            return error;
+        }
     }
 
     // Handle sign up

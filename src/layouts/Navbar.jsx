@@ -18,7 +18,6 @@ const Navbar = () => {
             <div className="side-buttons">
                 <NavigationButton name="home" to="/" icon={<GoHome />} text="home" />
                 <NavigationButton name="training-plans" to="/training-plans" icon={<CiDumbbell />} text="training plans" />
-                <NavigationButton name="diet" to="/diet" icon={<BiBowlHot />} text="diet" />
                 <NavigationButton name="explore" to="/explore" icon={<SlCompass />} text="explore" />
                 <NavigationButton name="settings" to="/settings" icon={<IoSettingsOutline />} text="settings" />
             </div>

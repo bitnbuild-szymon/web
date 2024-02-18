@@ -1,4 +1,4 @@
-.sign-up
+.sign-in
 {
     position: absolute;
     top: 0;
@@ -56,6 +56,12 @@
             font-weight: 500 !important;
         }
 
+        .error
+        {
+            color: rgb(255, 77, 77) !important;
+            font-size: 15px !important;
+        }
+
         label
         {
             position: relative;
@@ -87,10 +93,12 @@
                     border: 2px solid var(--theme-color-1);
                 }
             }
+
+            
         }
         
 
-        .sign-up-button 
+        .sign-in-button 
         {
             margin-top: 20px;
             width: 100%;
@@ -110,6 +118,6 @@
             color: var(--theme-color-1);
             text-transform: capitalize;
         }
-        
+
     }
 }

@@ -11,13 +11,59 @@
         display: flex;
         flex-direction: row;
     }
-    .profile-info
+    .side-container
     {
         position: absolute;
         left: calc(50% + 350px);
-        margin-top: 50px;
+        margin-top: 30px;
         width: 350px;
-        height: 500px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .section
+        {
+            position: relative;
+            width: 100%;
+            height: fit-content;
+            border-radius: 10px;
+            border: 2px solid var(--theme-color-3);
+            background-color: white;
+        }
+
+        .my-profile
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+
+            .profile-image
+            {
+                position: relative;
+                margin-top: 25px;
+                width: 75px;
+                height: 75px;
+                border-radius: 50px;
+            }
+
+            .username
+            {
+                font-family: "Montserrat";
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 25px;
+                color: black;
+            }
+        }
+
+        .friends
+        {
+            height: 600px;
+        }
+
     }
     
 }

@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 :root
 {
   --theme-color-1: #1780EA;
   --theme-color-2: rgb(160, 160, 160);
-  --theme-color-3: #dfdfdf;
+  --theme-color-3: #ECEDF0;
 }
 
 a 
@@ -18,5 +18,5 @@ body
 {
   margin: 0;
   padding: 0;
-  background-color: F9FAFB;
+  background-color: #F9FAFB;
 }
